@@ -1,0 +1,230 @@
+/* Fonts */
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/poppins.semibold.ttf);
+
+}
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url(../fonts/Montserrat-Medium.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Montserrat-regular';
+    src: url(../fonts/Montserrat-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'FuturaHeavyBT';
+    src: url(../fonts/FuturaHeavyBT.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Sulatty';
+    src: url(../fonts/Sulatty.ttf) format('truetype');
+}
+
+/* style for nav and banner section starts */
+
+.img {
+    background-image: linear-gradient(to right, rgba(9,9,9,.99), rgba(9,9,9,.3) 80%),url(../images/store-984393_1920.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.nav-color {
+    color: white;
+}
+    .nav-color:hover,.nav-color:focus,.nav-color:active {
+        color: white;
+    }
+.navbar {
+    font-family: Montserrat-Medium;
+}
+.nav-item a{
+    font-size:12px;
+}
+.navbar-brand:hover{
+    color:white;
+}
+
+.banner-title h3 {
+    font-family: FuturaHeavyBT;
+    color: white;
+    /* margin: 10% 8%; */
+    /* width: 20%; */
+    font-size: 2.3vw;
+    margin: 10% 0% 2% 8%;
+    /* margin-left: 8%; */
+}
+
+.banner-image {
+    /* border-bottom: 4px solid #dc3545; */
+    height: 75vh;
+}
+
+.banner-title p {
+    color: white;
+    width: 37%;
+    /* margin: -9% 8%; */
+    text-align: justify;
+    font-size: 1.07vw;
+    margin: 2% 0% 2% 8%;
+}
+
+.nav-item a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position:relative;
+    top:7px;
+    background: #bb2d3b;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav-item a:hover:after {
+    width: 100%;
+    left: 0;
+    
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #1e2125;
+     background-color: transparent; 
+}
+.wave {
+    position: relative;
+    left: 0;
+    top: -140.517px;
+    margin-bottom: -140.517px;
+}
+.padding-zero{
+    padding:0px;
+}
+.banner-title .services{
+    margin-left:8%;
+}
+
+.banner-title .services, .banner-title .product {
+    /* margin-top: 12%; */
+    /* margin: ; */
+    margin-right: 1%;
+    width: 14%;
+}
+
+.categaroyDropdown {
+    display: inline;
+    position: relative;
+}
+
+.btn.btn-danger.product {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #bb2d3b;
+}
+
+.btn.btn-danger.product:hover {
+    background: #d6dde0;
+    border: 1px solid #d6dde0;
+    color: #bb2d3b;
+}
+
+/* style for dropdown starts */
+
+ul.productcategories {
+    width: 94%;
+    position: absolute;
+    top: 33px;
+    right: 14px;
+    list-style: none;
+    background: #dc3545;
+    overflow: hidden;
+    transform: translateY(20px);
+    transition: 0.3s;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+ul.productcategories li a {
+    color: white;
+}
+
+ul.productcategories li {
+    padding: 9px 33px;
+    transition: 0.15s;
+    width: 100%;
+}
+
+ul.productcategories li a {
+    text-decoration: none;
+}
+
+ul.productcategories li:hover {
+    background: #bb2d3b;
+}
+
+.product:hover .productcategories {
+    transform: translateY(0px);
+    opacity: 1;
+    pointer-events: all;
+}
+
+.product i {
+    margin-left: 9px;
+    transition: 0.3s;
+}
+
+.product:hover .fa-chevron-down {
+    transform: rotate(-180deg) !important;
+}
+
+/* style for dropdown ends */
+
+
+/* style for nav and banner section ends */
+
+/* style for product sections starts */
+
+.categoryHeading {
+    background: #0B3056;
+    color: white;
+    border-bottom: 4px solid #dc3545;
+}
+
+.productImg {
+    width: 85%;
+    margin: auto;
+}
+
+.profuctTxt h4 {
+    color: #0B3056;
+}
+
+.productBtns {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-content: center;
+}
+
+.prdtOrder {
+    background: #0B3056;
+    color: white;
+    margin-right: 2px;
+}
+
+.prdtDetail {
+    border: 1px solid #0B3056;
+    margin-left: 2px;
+    color: #0B3056;
+}
+
+.prdtOrder:hover, .prdtDetail:hover {
+    background: #bb2d3b;
+    border: 1px solid #bb2d3b;
+    color: white;
+}
+
+/* style for product sections ensd */
